@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+      <div class="result">
+        <p id="result">0</p>
+      </div>
+      <div class="buttons">
+        <div class="row">
+          <button class="largebtn" onclick="eraseAll()">
+            <p>C</p>
+          </button>
+          <button class="btn" onclick="erase()">
+            <p>AC</p>
+          </button>
+          <button class="btn" id="btn-/" onclick="calculStock('/')">
+            <p>/</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" onclick="clickNumber('7')">
+            <p>7</p>
+          </button>
+          <button class="btn" onclick="clickNumber('8')">
+            <p>8</p>
+          </button>
+          <button class="btn" onclick="clickNumber('9')">
+            <p>9</p>
+          </button>
+          <button class="btn" onclick="calculStock('*')">
+            <p>X</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" onclick="clickNumber('4')">
+            <p>4</p>
+          </button>
+          <button class="btn" onclick="clickNumber('5')">
+            <p>5</p>
+          </button>
+          <button class="btn" onclick="clickNumber('6')">
+            <p>6</p>
+          </button>
+          <button class="btn" id="btn--" onclick="calculStock('-')">
+            <p>-</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" onclick="clickNumber('1')">
+            <p>1</p>
+          </button>
+          <button class="btn" onclick="clickNumber('2')">
+            <p>2</p>
+          </button>
+          <button class="btn" onclick="clickNumber('3')">
+            <p>3</p>
+          </button>
+          <button class="btn" id="btn-+" onclick="calculStock('+')">
+            <p>+</p>
+          </button>
+        </div>
+        <div class="row">
+          <button class="btn" onclick="clickNumber('0')">
+            <p>0</p>
+          </button>
+          <button class="btn" onclick="clickNumber('.')">
+            <p>.</p>
+          </button>
+          <button class="btn" onclick="calculSquare()">
+            <p>x<sup>2</sup></p>
+          </button>
+          <button class="btn" onclick="calculFinal()">
+            <p>=</p>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
